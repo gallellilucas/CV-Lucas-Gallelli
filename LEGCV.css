@@ -1,10 +1,12 @@
+html {
+}
 body{
     margin: 0;
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: gradient ;}
-/** Menu - NavBar*/
+    background-image: url("C:\Users\lgallelli.TST\Downloads\prueba.png")
+}
+    /** Menu - NavBar*/
 ul {
     margin: 0;
     padding-left: 0;
@@ -44,9 +46,7 @@ li a:hover {
         ul {display: none;}
         nav {display: block;}
         a {width: 30px;}}
-
    /** Elementos */
-
 h1{ 
     font-weight:700;
     font-size: 60px; 
@@ -70,25 +70,35 @@ h4{
 p{  
     text-align: justify; 
     font-size: 17px; 
-    font-weight: 300;}
+    font-weight: 300;
+    margin: 0;}
 button {   
     position: sticky;
     border: 1px solid; 
     background-color: transparent; 
     border-color: #3d65cb;
     color: #ffffff;
-    border-radius: 8px;
-    display: block;}
-#abutton {
+    border-radius: 8px;}
+    #abutton {
     color: #3d65cb;
     font-family: 'Montserrat', sans-serif;     
     font-size: 18px; 
     font-weight: 500;
-    padding: 10px; 
-    width: fit-content;}  
-    
-    /** Index */
-
+    padding-top: 10px;
+    margin: 0;
+    width: fit-content;
+    height: 25px;
+    text-align: center;}  
+        button:hover {
+            border: 1px solid;
+            border-color:#3d65cb;
+            background-color: #3d65cb; border-radius: 8px;}
+        #abutton:hover {
+        color: #ffffff;
+        font-weight: 400;
+        border-color:#3d65cb;
+        background-color: #3d65cb; border-radius: 8px;}
+        /** Index */
 #imagenindex {
     position: absolute;
     width:1010px;
@@ -107,22 +117,29 @@ button {
     color: #a3a5a9;
     width: 340px;}
 #button-index{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 90px;}
+#download {
+    padding: 0;
+    margin-left: 70px;
+    text-align: center;
+    color: #808082;
+    font-size: 16px;
+    width: 200px;}
     @media (max-width: 1100px) {
-        #imagenindex {width: 725px; left:-100px;}
+        #imagenindex {width: 800px; left:-100px;}
         #indexblock {margin-left: 50%; margin-top: 100px}}
     @media (max-width: 760px) {
             #imagenindex {width: 600px;left:0;bottom: 0;}
-            #indexblock {display: block center; margin-left: 25%; margin-top: 100px}}
+            #indexblock {display: block center; margin-left: 25%; margin-top: 80px}}
     @media (max-width: 600px) {
-                #imagenindex {width: 400px;left:0;}
-                #indexblock {margin-left: 10%; margin-top: 50px}
-                #p-index {display: none;}
+                #imagenindex {width: 350px;left:0;}
+                #indexblock {margin-left: 10%; margin-top: 50px; margin-bottom: 5px;}
+                #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
+                #download { font-size: 14px;}
                 h1{font-size: 50px}
                 #button-index {margin-left: 60px;}}
         /** Sobre mi */
-
 #section-margin {
     text-align: left;
     margin-top: 110px;
@@ -137,42 +154,31 @@ button {
     margin-top: 50px;
     border-radius: 500px;
     width: 250px;}
-#globodetexto {
+#globodetexto,#globodetexto-2,#globodetexto-3  {
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 25px 5% 25px 5%;
+    padding: 20px 7% 20px 7%;
     border-left: 20;
-    border-radius: 20px;
+    border-radius: 20px;}
+#globodetexto {
     color: rgb(31, 30, 30);
-    background-color: rgb(239, 239, 239);}
+    background-color: rgb(247, 247, 247);}
 #globodetexto-2 {
-    margin-top: 30px;
-    padding: 20px 10% 20px 10%;
-    border-left: 20;
-    border-radius: 20px;
     color: rgb(255, 255, 255);
     background-color: #3d65cb;}
 #globodetexto-3 {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    padding: 20px 10% 20px 10%;
-    border-left: 20;
-    border-radius: 20px;
     color: rgb(255, 255, 255);
     background-color: #264082;}
 #button-siguiente {
     left: 100%;
-    padding: 5px;
     width: auto;
+    margin-top: 10%;
     margin-bottom: 10%;}
     @media (max-width: 1200px) {
         #section-margin {margin-left: 10%; margin-right: 10%;}
         #imagen-sobremi {width: 0px}
-        #sobremi-titulo {margin-left: 0;}
-        #globodetexto {margin-top: 80px;}}
-
+        #sobremi-titulo {margin-left: 0;margin-bottom: 40px;}}
         /** Experiencia */
-
 #titulo {
     margin-bottom: 50px;
     color:#3d65cb;}
@@ -187,52 +193,39 @@ button {
         border-width: 0.5px;}
 #derecha {
     color: #3d65cb;
-    text-align: right;
+    text-align: left;
+    font-weight: 600;
     font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 40px;}
-
-        /** Edudacion */
-
+    margin-top: 0px;
+    margin-bottom: 15px;}
+#icono {
+    width:45px;
+    position: relative;
+    margin-bottom: 30px;
+}     
+    /** Edudacion */
 #primerestudio {
         margin-top: 10px;
         border-bottom: solid; 
-        border-color: #c8c8c9;
+        border-color: #e7e6e6;
         border-width: 0.5px;
-        padding-bottom: 20px;}
+        padding-bottom: 40px;}
 #segundoestudio {
         margin-top: 30px;
         border-bottom: solid; 
-        border-color: #c8c8c9;
+        border-color: #e7e6e6;
         border-width: 0.5px;
         padding-bottom: 20px;}
 #tercerestudio {
-        margin-top: 50px;
+        margin-top: 30px;
         border-width: 0.5px;}
-
         /** Idiomas */
-
 #langsection {    
     margin-top: 60px;
     margin-bottom: 30px;}
-.row::after {
-        content: "";
-        clear: both;
-        display: table;}
-[class*="col-"] {
-        float: left;
-        padding: 15px;
-        color: hsl(0, 0%, 100%);
-        width: 50%; 
-        padding: 30px;
-        border-radius: 20px;
-        border: 5px solid white;}
-        .col-1 {background-color:#264082}
-        .col-2 {background-color:#3d65cb}
-        .col-3 {background-color:#7f9be4}
-        .col-4 {background-color:#F5F5F5; color: #292929;}
 
-/** Contacto */
+        /** Contacto */
+
 input {
     font-family: 'Montserrat', sans-serif;
     width: 90%; 
@@ -242,17 +235,24 @@ input {
     background:#ffffff;
     border: 0px; 
     border-radius: 60px;}
-#msj { 
-    padding-bottom: 100px; 
-    border-radius: 15px;
-    padding-top: 15px;}
+textarea {
+        font-family: 'Montserrat', sans-serif;
+        width: 87%; 
+        height: 100px;
+        top: 342px;
+        padding: 15px;  margin: 10px;
+        background:#ffffff;
+        border: 0px; 
+        border-radius: 20px;}
 #redes {
+    display: block;
     text-align: center;
-    margin-top: 100px;
-    padding-top: 30px;
-    height: 100px;}
+    margin-top: 50px;
+    height: 70px;}
 #a-redes {
-    color: #3d65cb;
+    color: #292929;
+    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 600;
     font-size: 14px;}
 #button-enviar {
@@ -269,3 +269,5 @@ input {
     font-weight: 500;
     padding: 10px; 
     width: fit-content;}
+@media (max-width: 800px) {
+    #redes{ margin-left: -10%;}}
