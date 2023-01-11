@@ -3,18 +3,17 @@ body{
     margin: 0;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEXIZmho1ci5Uqcotaslck84lA6DONgW-224Ah1_MR06xxeoYQ9Paf9-uqHzsvS-D0Tc1PwTS7QjSDxHMA5mygib5-csW7NIsefdunbUNqB6JM7eOvi7V77SkC5cRwlTd-79RyLjET692AX93WA-P0Y4=w1551-h969-no?authuser=0");}
     /** Menu - NavBar*/
 ul {
     margin: 0;
-    padding-left: 0;
     top: 0;
-    z-index: 1000;
     list-style-type: none;
     text-align: center;
     overflow: hidden;
-    position: sticky;
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%) ;
+    position: absolute;
+    background: transparent;
     height: 50px;}
 li {
     display: inline-block;} 
@@ -22,14 +21,14 @@ a {
     display: block; 
     width: 130px;
     text-align: center;
-    color: rgb(236, 236, 236);
-    padding: 6px 15px 6px 15px;
+    color: black;
+    padding: 6px 30px 6px 1px;
     text-decoration: none;
     font-size: 14px; 
-    font-weight: 300;
+    font-weight: 600;
     padding-top: 15px;}
 nav {
-    top: 0;
+    bottom: 0;
     z-index: 1000;
     list-style-type: none;
     text-align: center;
@@ -39,11 +38,11 @@ nav {
     height: 50px;
     display: none;}
 li a:hover {
-    color: rgb(255, 255, 255); /** Color al momento de hacer click*/}
+    color: rgb(28, 78, 86); /** Color al momento de hacer click*/}
     @media (max-width: 840px) {
         ul {display: none;}
         nav {display: block;}
-        a {width: 30px;}}
+        a {width: 45px;}}
    /** Elementos */
 h1{ 
     font-weight:700;
@@ -77,14 +76,14 @@ button {
     border: 0;}
     #abutton {
     color: #ffffff;
+    padding-left: 10%;
     font-family: 'Montserrat', sans-serif;     
     font-size: 18px; 
     font-weight: 500;
     padding-top: 10px;
     margin: 0;
     width: fit-content;
-    height: 25px;
-    text-align: center;}  
+    height: 25px;}  
         /** Index */
 #imagenindex {
     position: absolute;

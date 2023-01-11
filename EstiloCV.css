@@ -1,65 +1,68 @@
 
 body{
     margin: 0;
-    min-height: 100%;
+    min-height: 200%;
     font-family: 'Montserrat', sans-serif;
-    
     background-attachment: fixed;
-
-    background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEWiBgjlFo-gXEzZkwIs8a6QYxuXCjc5AvnJoEyRBStQ4QdNT_WKyva3QGASf1dWWn1iLhSPTAmk06aXAz-AQiL9vurljje_9lUo0uxJLVmbNI18R0XI7RFZoT51dAdihR21m79tfMGtoC36TeWsmwjg=w1491-h969-no?authuser=0") }
-    /** Menu - NavBar*/
+    background-image: url("");}
+   /** Menu - NavBar*/
 ul {
-    margin: 0;
-    padding-left: 0;
-    top: 0;
+    bottom: 0;    
     z-index: 1000;
+    margin: 0;    
     list-style-type: none;
     text-align: center;
     overflow: hidden;
     position: sticky;
-    background-color: #3d65cb;
+    background-color: white;    
     height: 50px;}
 li {
-    display: inline-block;} 
+    display: inline-block;
+    position: static;
+    margin-bottom: 1px;} 
 a {
+    bottom: 0;
+    z-index: 1000;
     display: block; 
     width: 130px;
     text-align: center;
-    color: rgb(236, 236, 236);
+    color: black;
     padding: 6px 15px 6px 15px;
     text-decoration: none;
     font-size: 14px; 
-    font-weight: 300;
+    font-weight: 600;
     padding-top: 15px;}
 nav {
-    top: 0;
+    position: static;
+
+    bottom: 0;    
     z-index: 1000;
+    margin: 0;    
     list-style-type: none;
     text-align: center;
     overflow: hidden;
     position: sticky;
-    background-color: #3d65cb;
     height: 50px;
     display: none;}
 li a:hover {
-    color: rgb(255, 255, 255); /** Color al momento de hacer click*/}
+    color: rgb(56, 124, 145); /** Color al momento de hacer click*/}
     @media (max-width: 840px) {
         ul {display: none;}
         nav {display: block;}
-        a {width: 30px;}}
+        a {width: 45px;}}
    /** Elementos */
 h1{ 
     font-weight:700;
     font-size: 60px; 
-    color: #3d65cb; 
+    color: black; 
     margin: 0px;}
 h2{
         font-weight:700;
         font-size: 50px; 
-        color: #3d65cb; 
+        color: black; 
         margin: 0px;} 
 h3{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 24px; 
     font-style: normal;
     color: rgb(29, 29, 32); 
@@ -77,11 +80,11 @@ button {
     position: sticky;
     border: 1px solid; 
     background-color: transparent; 
-    border-color: #3d65cb;
+    border-color: rgb(56, 124, 145);
     color: #ffffff;
     border-radius: 8px;}
     #abutton {
-    color: #3d65cb;
+    color: rgb(56, 124, 145);
     font-family: 'Montserrat', sans-serif;     
     font-size: 18px; 
     font-weight: 500;
@@ -92,50 +95,51 @@ button {
     text-align: center;}  
         button:hover {
             border: 1px solid;
-            border-color:#3d65cb;
-            background-color: #3d65cb; border-radius: 8px;}
+            border-color: rgb(56, 124, 145);
+            background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
+            border-radius: 8px;}
         #abutton:hover {
         color: #ffffff;
         font-weight: 400;
-        border-color:#3d65cb;
-        background-color: #3d65cb; border-radius: 8px;}
+        border-radius: 8px;}
         /** Index */
 #imagenindex {
     position: absolute;
-    width:1010px;
+    width:880px;
     left: 0px;
-    margin: 0;
-    padding: 0; 
+    margin-left: 0;
+    padding-left: 0; 
     bottom: 0;}
 #indexblock {
     height: 10px;
-    margin-top: 200px;
+    margin-top: 180px;
     margin-left: 60%;
     width:fit-content;}
 #p-index{
     margin-top: 40px;
     text-align: center;
-    color: #a3a5a9;
+    color: #919395;
     width: 340px;}
 #button-index{
+    padding: 0;
     margin-top: 40px;
     margin-left: 90px;}
 #download {
     padding: 0;
     margin-left: 70px;
     text-align: center;
-    color: #808082;
+    color: #6c6c6d;
     font-size: 16px;
     width: 200px;}
     @media (max-width: 1100px) {
-        #imagenindex {width: 800px; left:-100px;}
+        #imagenindex {width: 700px; left:-100px;}
         #indexblock {margin-left: 50%; margin-top: 100px}}
     @media (max-width: 760px) {
-            #imagenindex {width: 600px;left:0;bottom: 0;}
+            #imagenindex {width: 500px;left:0;bottom: 0;}
             #indexblock {display: block center; margin-left: 25%; margin-top: 80px}}
     @media (max-width: 600px) {
-                #imagenindex {width: 350px;left:0;}
-                #indexblock {margin-left: 10%; margin-top: 50px; margin-bottom: 5px;}
+                #imagenindex {width: 400px;left:0;}
+                #indexblock {margin-left: 15%; margin-top: 50px; margin-bottom: 5px;}
                 #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
                 #download { font-size: 14px;}
                 h1{font-size: 50px}
@@ -163,13 +167,13 @@ button {
     border-radius: 20px;}
 #globodetexto {
     color: rgb(31, 30, 30);
-    background-color:#f5f4f4;}
+    background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
 #globodetexto-2 {
     color: rgb(255, 255, 255);
-    background-color: #3d65cb;}
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
 #globodetexto-3 {
     color: rgb(255, 255, 255);
-    background-color: #264082;}
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
 #button-siguiente {
     left: 100%;
     width: auto;
@@ -182,7 +186,7 @@ button {
         /** Experiencia */
 #titulo {
     margin-bottom: 50px;
-    color:#3d65cb;}
+    color:black;}
 #primertrabajo {
     margin-top: 10px;
     border-bottom: solid; 
@@ -193,7 +197,7 @@ button {
         margin-top: 40px;
         border-width: 0.5px;}
 #derecha {
-    color: #3d65cb;
+    color: rgb(56, 124, 145);
     text-align: left;
     font-weight: 600;
     font-size: 16px;
@@ -216,9 +220,10 @@ button {
         border-bottom: solid; 
         border-color: #e7e6e6;
         border-width: 0.5px;
-        padding-bottom: 20px;}
+        padding-bottom: 50px;}
 #tercerestudio {
         margin-top: 30px;
+        padding-bottom: 20px;
         border-width: 0.5px;}
         /** Idiomas */
 #langsection {    
@@ -257,10 +262,10 @@ textarea {
     font-weight: 600;
     font-size: 14px;}
 #button-enviar {
-    margin-left: 15px;
-    padding: 4px;
-    background-color:#3d65cb;
-    width: auto;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 2px;
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
     margin-bottom: 1%;
     margin-top: 5%;}
 #abutton-enviar{ 
@@ -270,5 +275,18 @@ textarea {
     font-weight: 500;
     padding: 10px; 
     width: fit-content;}
+#check { 
+    margin-top: 10px ;
+    margin-left: 20px ;
+    float: left;
+    font-size: 12px;
+    width: fit-content;}
+#checkbox {
+    float: left;
+    background-color: #292929;
+    width: 15px;
+    border: 0 solid;
+    margin: 0 0  0 15px;
+}
 @media (max-width: 800px) {
     #redes{ margin-left: -10%;}}
