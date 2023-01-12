@@ -3,14 +3,16 @@ body{
     margin: 0;
     min-height: 200%;
     font-family: 'Montserrat', sans-serif;
-    background-attachment: fixed;
-    background-image: url("");}
+    background-attachment: static;
+    background-image: url="https://64.media.tumblr.com/e9d7d4c5189bf2d4683c17b2a62a8ae2/b3cb9c77907a5abc-eb/https://64.media.tumblr.com/e9d7d4c5189bf2d4683c17b2a62a8ae2/b3cb9c77907a5abc-eb/s2048x3072/b0f3a84730cfe942783b98a0b2a202f11261b76d.pnj/b0f3a84730cfe942783b98a0b2a202f11261b76d.pnj";}
    /** Menu - NavBar*/
 ul,nav {
     top: 0;  z-index: 1000;
     margin: 0;    height: 50px;
     list-style-type: none;
+    display: flex;
     text-align: center;
+    justify-content: center;
     overflow: hidden;
     position: sticky;
     background-color: rgba(255, 255, 255, 0.123);  -webkit-backdrop-filter: blur(1px);
@@ -30,11 +32,7 @@ a {
     padding: 15px 15px 0px 15px;
     text-decoration: none;
     font-size: 14px; font-weight: 600;}
-    @media (max-width: 840px) {
-        ul {display: none;}
-        nav {display: block;}
-        a {width: 45px;}}
-   /** Elementos */
+   /** Elementos comunes a  mas de 1 seccion */
 h1,h2,h3,h4,p {
         color: black;
         margin: 0px;
@@ -50,6 +48,9 @@ h3{
     font-size: 24px; 
     font-style: normal;}
 h4{ 
+    font-size: 42px; 
+    font-weight: 400;}
+h5 {
     font-size: 18px; 
     font-weight: 400;}
 p{  
@@ -76,7 +77,7 @@ button {
     width: fit-content;
     height: 30px;
     text-align: center;}  
-#abutton:hover {
+    #abutton:hover {
         border: 1px solid;
         border-color: rgb(56, 124, 145);
         background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
@@ -87,7 +88,29 @@ button {
     position: relative;
     text-align: left;
     margin: 110px 20% 200px 20%;}
-        /** Index */
+#globodetexto,#globodetexto-2,#globodetexto-3  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 8% 30px 8%;
+    border-left: 20;
+    border-radius: 20px;}
+    #globodetexto {
+        color: rgb(31, 30, 30);
+        background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
+    #globodetexto-2 {
+        color: rgb(255, 255, 255);
+        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
+    #globodetexto-3 {
+        color: rgb(255, 255, 255);
+        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
+    #titulo {
+    margin-bottom: 50px;
+    color:black;}
+    #icono {
+        width:55px;
+        position: relative;
+        margin-bottom: 40px;}     
+    /** Index */
 #imagenindex {
             position: absolute;
             width:1010px;
@@ -110,28 +133,13 @@ button {
             margin-top: 40px;
             margin-left: 90px;}
 #download {
-            padding: 0;
-            margin-left: 70px;
-            text-align: center;
-            color: #808082;
-            font-size: 16px;
-            width: 200px;}
-    @media (max-width: 1100px) {
-                #imagenindex {width: 800px; left:-100px;}
-                #indexblock-2 {margin-left: 50%; margin-top: 100px}}
-    @media (max-width: 760px) {
-                    #imagenindex {width: 600px;left:0;bottom: 0;}
-                    #indexblock-2 {display: block center; margin-left: 25%; margin-top: 80px}}
-    @media (max-width: 600px) {
-                        #imagenindex {width: 350px;left:0;}
-                        #indexblock-2 {margin-left: 10%; margin-top: 50px; margin-bottom: 5px;}
-                        #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
-                        #download { font-size: 14px;}
-                        h1{font-size: 50px}
-                        #button-index {margin-left: 60px;}}
-
-        /** Sobre mi */
-
+    padding: 0;
+    margin-left: 70px;
+    text-align: center;
+    color: #808082;
+    font-size: 16px;
+    width: 200px;}
+    /** Sobre mi */
 #sobremi-titulo {
     margin-left: 45%;
     margin-bottom: 150px;}
@@ -141,29 +149,7 @@ button {
     margin-top: 50px;
     border-radius: 500px;
     width: 250px;}
-#globodetexto,#globodetexto-2,#globodetexto-3  {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 30px 8% 30px 8%;
-    border-left: 20;
-    border-radius: 20px;}
-    #globodetexto {
-        color: rgb(31, 30, 30);
-        background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
-    #globodetexto-2 {
-        color: rgb(255, 255, 255);
-        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-    #globodetexto-3 {
-    color: rgb(255, 255, 255);
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-    @media (max-width: 1200px) {
-        #section-margin {margin-left: 10%; margin-right: 10%;}
-        #imagen-sobremi {width: 0px}
-        #sobremi-titulo {margin-left: 0;margin-bottom: 40px;}}
-        /** Experiencia */
-#titulo {
-    margin-bottom: 50px;
-    color:black;}
+    /** Experiencia */
 #primertrabajo {
     margin-top: 10px;
     border-bottom: solid; 
@@ -173,29 +159,16 @@ button {
 #segundotrabajo {
         margin-top: 40px;
         border-width: 0.5px;}
-#derecha {
+#resaltado {
     color: rgb(56, 124, 145);
-    text-align: left;
+    text-align: right;
     font-weight: 600;
     font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 15px;}
-#icono {
-    width:55px;
-    position: relative;
-    margin-bottom: 40px;}     
-.flex{
-	height:100%;
-	display: flex;
-    justify-content: space-between;
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);}
-.textos{
-	text-align: right;}
-#textos-div {
-    margin: 0;    padding: 0;}
-#ventana-modal {
-    position: fixed; width: 100%;}
+    margin: 15px 0 15px 0;
+    width: fit-content;
+    padding: 0; }
+
+/* Ventanas modales */
 #abrir, #abrir-2{
 	text-decoration: none;
 	font-size:14px;
@@ -208,6 +181,18 @@ button {
     font-weight: 400;
     text-decoration: underline;
     color:rgb(56, 124, 145); }
+.flex{
+	height:100%;
+	display: flex;
+    justify-content: space-between;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);}
+.textos{
+	text-align: right;}
+#textos-div {
+    margin: 0;    padding: 0;}
+#ventana-modal {
+    position: fixed; width: 100%;}
 .modal{
 	display: none;
 	position: fixed;
@@ -221,7 +206,7 @@ button {
 .contenido-modal{
 	position: relative;
 	background-color: #fefefe;
-    padding: 25px 25px 60px 25px;
+    padding: 25px 25px 30px 25px;
 	margin: auto;
 	width: 40%;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .4);
@@ -231,14 +216,6 @@ button {
         @keyframes modal{
             from{top:-330px; opacity:0;}
             to{top:0; opacity:1;}}
-.close{
-	color: #d6d3d3;
-    margin-bottom: 10px;
-	font-size:30px;}
-        .close:hover{
-	color: rgb(233, 78, 78);
-	text-decoration: none;
-	cursor: pointer;}
 .modal-header {
 	padding: 1px 16px;
 	color: black;
@@ -247,24 +224,17 @@ button {
         margin-bottom: 25px;
         font-weight: 700;}
 .modal-body{
-	padding: 10px 20px 40px 20px;
+	padding: 10px 20px 20px 20px;
     text-align: center;}
-    #icono-referencia {
-        width:45px;
-        position: relative;
-        align-items: right;} 
-        #contact-lines {
-        position: absolute;
-        font-weight:500;
-        padding-left: 0;
-        margin-bottom: 50px;
-        color: rgb(56, 124, 145);}
-@media screen and (max-width:900px){
-	.contenido-modal{width: 70%}
-	.textos{padding: 150px;}}
-@media screen and (max-width:500px){
-	.textos{padding:50px}}
-    /** Edudacion */
+.close{
+	color: #d6d3d3;
+    margin-bottom: 10px;
+	font-size:30px;}
+        .close:hover{
+	color: rgb(233, 78, 78);
+	text-decoration: none;
+	cursor: pointer;}
+    /** Educacion e Idiomas */
 #primerestudio {
         margin-top: 10px;
         border-bottom: solid; 
@@ -281,7 +251,6 @@ button {
         margin-top: 30px;
         padding-bottom: 20px;
         border-width: 0.5px;}
-        /** Idiomas */
 #langsection {    
     margin-top: 100px;
     margin-bottom: 30px;}
@@ -330,6 +299,7 @@ textarea {
     font-size: 14px; 
     font-weight: 500;
     padding: 10px; 
+    border-radius: 30px;
     width: fit-content;}
 #check { 
     margin-top: 9px ;
@@ -343,12 +313,62 @@ textarea {
     width: 15px;
     border: 0 solid;
     margin: 0 0  0 15px;}
-@media (max-width: 800px) {
-    #redes{ margin-left: -10%;}}
-
 #button-siguiente {
     position: absolute;
     margin-top: 4%;
     right: 0;}
-
-    
+#option-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;}
+#globodecontacto  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 5% 20px 5%;
+    width: 45%;
+    height: 200px;
+    border-radius: 20px;
+    color: white;
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
+#a-3{
+margin-top: 90px;
+text-decoration: none;
+text-align: center;
+font-size:40px;
+display: inline-block;
+padding: 1px 0 3px;
+width: 55px;
+border-radius: 300%;
+color:rgb(56, 124, 145);
+background-color: white;}
+#a-3:hover{
+     background-color: #212121; color: white; }
+#QR {
+        width:80%;
+        margin-top: 40px;  
+        align-items: center;}
+    /*Responsive*/
+    @media (max-width: 1100px) {
+        #imagenindex {width: 800px; left:-100px;}
+        #indexblock-2 {margin-left: 50%; margin-top: 100px}
+        #section-margin {margin-left: 10%; margin-right: 10%;}
+        #imagen-sobremi {width: 0px}
+        #sobremi-titulo {margin-left: 0;margin-bottom: 40px;}}
+    @media (max-width: 840px) {
+        ul {display: none;}
+        a {width: 45px;}
+        .contenido-modal{width: 70%}
+        .textos{padding: 150px;}
+        #option-section,nav{ display:block;}
+        #globodecontacto {width: 90%;height: 200px;}
+        #redes{ margin-left: -10%;}
+        #imagenindex {width: 600px;left:0;bottom: 0;}
+        #indexblock-2 {display: block center; margin-left: 25%; margin-top: 80px}}
+    @media screen and (max-width:580px){
+        h1{font-size: 50px}
+        .textos{padding:50px}
+        #imagenindex {width: 350px;left:0;}
+        #indexblock-2 {margin-left: 10%; margin-top: 50px; margin-bottom: 5px;}
+        #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
+        #download {font-size: 14px;}
+        #button-index {margin-left: 60px;}}
