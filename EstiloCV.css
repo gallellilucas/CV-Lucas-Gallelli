@@ -1,4 +1,4 @@
-
+html{width: 100%;}
 body{
     margin: 0;
     min-height: 200%;
@@ -34,7 +34,6 @@ a {
     padding-top: 15px;}
 nav {
     position: static;
-
     bottom: 0;    
     z-index: 1000;
     margin: 0;    
@@ -55,18 +54,21 @@ h1{
     font-weight:700;
     font-size: 60px; 
     color: black; 
-    margin: 0px;}
+    margin: 0px;
+    width: fit-content;}
 h2{
         font-weight:700;
         font-size: 50px; 
         color: black; 
-        margin: 0px;} 
+        margin: 0px;
+        width: fit-content;} 
 h3{
     font-weight: 500;
     font-size: 24px; 
     font-style: normal;
     color: rgb(29, 29, 32); 
-    margin: 2px;;}
+    margin: 2px;
+    width: fit-content;}
 h4{ 
     font-size: 18px; 
     font-weight: 400;
@@ -75,7 +77,8 @@ p{
     text-align: justify; 
     font-size: 17px; 
     font-weight: 300;
-    margin: 0;}
+    margin: 0;
+    width: fit-content;}
 button {   
     position: sticky;
     border: 1px solid; 
@@ -104,17 +107,22 @@ button {
         border-radius: 8px;}
         /** Index */
 #imagenindex {
-    position: absolute;
-    width:880px;
-    left: 0px;
-    margin-left: 0;
-    padding-left: 0; 
-    bottom: 0;}
+    width:1000px;
+    right: 0px;
+    bottom: 0;
+    padding-bottom: 0;}
 #indexblock {
-    height: 10px;
-    margin-top: 180px;
-    margin-left: 60%;
-    width:fit-content;}
+    width: fit-content;
+    position: inline-block;
+    float: left;
+    width: 65%;}
+#indexblock-2 {
+    width: fit-content;
+    margin-top: 200px;
+    margin-right: 0;
+    float: left;
+    width: 35%;
+}
 #p-index{
     margin-top: 40px;
     text-align: center;
@@ -131,6 +139,7 @@ button {
     color: #6c6c6d;
     font-size: 16px;
     width: 200px;}
+ /*
     @media (max-width: 1100px) {
         #imagenindex {width: 700px; left:-100px;}
         #indexblock {margin-left: 50%; margin-top: 100px}}
@@ -177,8 +186,7 @@ button {
 #button-siguiente {
     left: 100%;
     width: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;}
+    margin-top: 10%;}
     @media (max-width: 1200px) {
         #section-margin {margin-left: 10%; margin-right: 10%;}
         #imagen-sobremi {width: 0px}
@@ -208,6 +216,121 @@ button {
     position: relative;
     margin-bottom: 30px;
 }     
+
+.flex{
+	width: 94%;
+	height:80%;
+	display: flex;
+    justify-content: space-between;
+	align-items: left;}
+
+.textos{
+	color:#fff;
+	text-align: right;
+}
+#textos-div {
+    margin: 0;
+    padding: 0;
+}
+#ventana-modal {
+    position: fixed;
+    width: 100%;
+}
+#abrir{
+    margin: 0;
+	text-decoration: none;
+	font-size:14px;
+	display: inline-block;
+	padding: 5px;
+	width: 130px;
+    font-weight: 400;
+	color:rgb(56, 124, 145);
+}
+#abrir:hover{
+    font-weight: 400;
+    text-decoration: underline;
+    color:rgb(56, 124, 145); 
+}
+.modal{
+	display: none;
+	position: fixed;
+	z-index:3000;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+    padding: 25px 25px 60px 25px;
+	margin: auto;
+	width: 40%;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: .7s;
+    border-radius: 15px;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+	color: #d6d3d3;
+    margin-bottom: 10px;
+	font-size:30px;
+}
+.close:hover{
+	color: rgb(233, 78, 78);
+	text-decoration: none;
+	cursor: pointer;
+}
+#titulo-referencia {
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.modal-header {
+	padding: 1px 16px;
+	color: black;
+    margin-bottom: 20px;
+}
+
+.modal-body{
+	padding: 10px 20px 20px 20px;
+    text-align: center;
+
+}
+
+#contact-lines {
+    position: absolute;
+    font-weight:500;
+    padding-left: 0;
+    margin-bottom: 25px;
+    color: rgb(56, 124, 145);}
+
+#icono-referencia {
+    width:45px;
+    position: relative;
+    align-items: right;
+} 
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}
+
     /** Edudacion */
 #primerestudio {
         margin-top: 10px;
@@ -251,12 +374,16 @@ textarea {
         border: 0px; 
         border-radius: 20px;}
 #redes {
-    display: block;
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
+    overflow: hidden;
     text-align: center;
-    margin-top: 50px;
-    height: 70px;}
+    margin-top: 10%;
+    position: static;
+    bottom: 0;
+    height: 100px;}
 #a-redes {
-    color: #292929;
+    color: white;
+    margin-top: 15%;
     margin-left: 10px;
     margin-right: 10px;
     font-weight: 600;
@@ -266,7 +393,6 @@ textarea {
     margin-right: 45%;
     padding: 2px;
     background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
-    margin-bottom: 1%;
     margin-top: 5%;}
 #abutton-enviar{ 
     color: #ffffff;
