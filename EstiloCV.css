@@ -1,4 +1,4 @@
-html{width: 100%;}
+
 body{
     margin: 0;
     min-height: 200%;
@@ -6,159 +6,132 @@ body{
     background-attachment: fixed;
     background-image: url("");}
    /** Menu - NavBar*/
-ul {
-    bottom: 0;    
-    z-index: 1000;
-    margin: 0;    
+ul,nav {
+    top: 0;  z-index: 1000;
+    margin: 0;    height: 50px;
     list-style-type: none;
     text-align: center;
     overflow: hidden;
     position: sticky;
-    background-color: white;    
-    height: 50px;}
+    background-color: rgba(255, 255, 255, 0.123);  -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(8px);}
+    nav {
+        display: none;}
 li {
     display: inline-block;
     position: static;
     margin-bottom: 1px;} 
+    li a:hover {
+        color: rgb(56, 124, 145);}
 a {
-    bottom: 0;
-    z-index: 1000;
     display: block; 
     width: 130px;
-    text-align: center;
     color: black;
-    padding: 6px 15px 6px 15px;
+    padding: 15px 15px 0px 15px;
     text-decoration: none;
-    font-size: 14px; 
-    font-weight: 600;
-    padding-top: 15px;}
-nav {
-    position: static;
-    bottom: 0;    
-    z-index: 1000;
-    margin: 0;    
-    list-style-type: none;
-    text-align: center;
-    overflow: hidden;
-    position: sticky;
-    height: 50px;
-    display: none;}
-li a:hover {
-    color: rgb(56, 124, 145); /** Color al momento de hacer click*/}
+    font-size: 14px; font-weight: 600;}
     @media (max-width: 840px) {
         ul {display: none;}
         nav {display: block;}
         a {width: 45px;}}
    /** Elementos */
+h1,h2,h3,h4,p {
+        color: black;
+        margin: 0px;
+        width: fit-content;}
 h1{ 
     font-weight:700;
-    font-size: 60px; 
-    color: black; 
-    margin: 0px;
-    width: fit-content;}
+    font-size: 60px;}
 h2{
         font-weight:700;
-        font-size: 50px; 
-        color: black; 
-        margin: 0px;
-        width: fit-content;} 
+        font-size: 50px;} 
 h3{
     font-weight: 500;
     font-size: 24px; 
-    font-style: normal;
-    color: rgb(29, 29, 32); 
-    margin: 2px;
-    width: fit-content;}
+    font-style: normal;}
 h4{ 
     font-size: 18px; 
-    font-weight: 400;
-    width:fit-content;}
+    font-weight: 400;}
 p{  
     text-align: justify; 
     font-size: 17px; 
-    font-weight: 300;
-    margin: 0;
-    width: fit-content;}
+    font-weight: 400;}
+#p-white {
+    color: #ffffff;}
 button {   
     position: sticky;
+    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%) ; 
+    border-radius: 8px;
+    border: 0;}
+#abutton {
+    border-radius: 8px;
     border: 1px solid; 
     background-color: transparent; 
-    border-color: rgb(56, 124, 145);
-    color: #ffffff;
-    border-radius: 8px;}
-    #abutton {
     color: rgb(56, 124, 145);
-    font-family: 'Montserrat', sans-serif;     
+    border-color: rgb(56, 124, 145);
     font-size: 18px; 
     font-weight: 500;
     padding-top: 10px;
-    margin: 0;
+    margin: 10px 0 10px 0;
     width: fit-content;
-    height: 25px;
+    height: 30px;
     text-align: center;}  
-        button:hover {
-            border: 1px solid;
-            border-color: rgb(56, 124, 145);
-            background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
-            border-radius: 8px;}
-        #abutton:hover {
+#abutton:hover {
+        border: 1px solid;
+        border-color: rgb(56, 124, 145);
+        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
+        border-radius: 8px;
         color: #ffffff;
-        font-weight: 400;
-        border-radius: 8px;}
+        font-weight: 400;}
+#section-margin {
+    position: relative;
+    text-align: left;
+    margin: 110px 20% 200px 20%;}
         /** Index */
 #imagenindex {
-    width:1000px;
-    right: 0px;
-    bottom: 0;
-    padding-bottom: 0;}
-#indexblock {
-    width: fit-content;
-    position: inline-block;
-    float: left;
-    width: 65%;}
+            position: absolute;
+            width:1010px;
+            left: 0px;
+            margin: 0;
+            padding: 0; 
+            bottom: 0;}
 #indexblock-2 {
-    width: fit-content;
-    margin-top: 200px;
-    margin-right: 0;
-    float: left;
-    width: 35%;
-}
+            align-items: center;
+            height: 10px;
+            margin-top: 200px;
+            margin-left: 60%;
+            width:fit-content;}
 #p-index{
-    margin-top: 40px;
-    text-align: center;
-    color: #919395;
-    width: 340px;}
+            margin-top: 40px;
+            text-align: center;
+            color: #a3a5a9;
+            width: 340px;}
 #button-index{
-    padding: 0;
-    margin-top: 40px;
-    margin-left: 90px;}
+            margin-top: 40px;
+            margin-left: 90px;}
 #download {
-    padding: 0;
-    margin-left: 70px;
-    text-align: center;
-    color: #6c6c6d;
-    font-size: 16px;
-    width: 200px;}
- /*
+            padding: 0;
+            margin-left: 70px;
+            text-align: center;
+            color: #808082;
+            font-size: 16px;
+            width: 200px;}
     @media (max-width: 1100px) {
-        #imagenindex {width: 700px; left:-100px;}
-        #indexblock {margin-left: 50%; margin-top: 100px}}
+                #imagenindex {width: 800px; left:-100px;}
+                #indexblock-2 {margin-left: 50%; margin-top: 100px}}
     @media (max-width: 760px) {
-            #imagenindex {width: 500px;left:0;bottom: 0;}
-            #indexblock {display: block center; margin-left: 25%; margin-top: 80px}}
+                    #imagenindex {width: 600px;left:0;bottom: 0;}
+                    #indexblock-2 {display: block center; margin-left: 25%; margin-top: 80px}}
     @media (max-width: 600px) {
-                #imagenindex {width: 400px;left:0;}
-                #indexblock {margin-left: 15%; margin-top: 50px; margin-bottom: 5px;}
-                #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
-                #download { font-size: 14px;}
-                h1{font-size: 50px}
-                #button-index {margin-left: 60px;}}
+                        #imagenindex {width: 350px;left:0;}
+                        #indexblock-2 {margin-left: 10%; margin-top: 50px; margin-bottom: 5px;}
+                        #p-index{margin-top: 20px; font-size: 14px; margin-left: -30px; }
+                        #download { font-size: 14px;}
+                        h1{font-size: 50px}
+                        #button-index {margin-left: 60px;}}
+
         /** Sobre mi */
-#section-margin {
-    text-align: left;
-    margin-top: 110px;
-    margin-left: 20%;
-    margin-right: 20%;}
+
 #sobremi-titulo {
     margin-left: 45%;
     margin-bottom: 150px;}
@@ -171,22 +144,18 @@ button {
 #globodetexto,#globodetexto-2,#globodetexto-3  {
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 20px 7% 20px 7%;
+    padding: 30px 8% 30px 8%;
     border-left: 20;
     border-radius: 20px;}
-#globodetexto {
-    color: rgb(31, 30, 30);
-    background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
-#globodetexto-2 {
-    color: rgb(255, 255, 255);
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-#globodetexto-3 {
+    #globodetexto {
+        color: rgb(31, 30, 30);
+        background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
+    #globodetexto-2 {
+        color: rgb(255, 255, 255);
+        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
+    #globodetexto-3 {
     color: rgb(255, 255, 255);
     background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-#button-siguiente {
-    left: 100%;
-    width: auto;
-    margin-top: 10%;}
     @media (max-width: 1200px) {
         #section-margin {margin-left: 10%; margin-right: 10%;}
         #imagen-sobremi {width: 0px}
@@ -212,56 +181,43 @@ button {
     margin-top: 0px;
     margin-bottom: 15px;}
 #icono {
-    width:45px;
+    width:55px;
     position: relative;
-    margin-bottom: 30px;
-}     
-
+    margin-bottom: 40px;}     
 .flex{
-	width: 94%;
-	height:80%;
+	height:100%;
 	display: flex;
     justify-content: space-between;
-	align-items: left;}
-
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);}
 .textos{
-	color:#fff;
-	text-align: right;
-}
+	text-align: right;}
 #textos-div {
-    margin: 0;
-    padding: 0;
-}
+    margin: 0;    padding: 0;}
 #ventana-modal {
-    position: fixed;
-    width: 100%;
-}
-#abrir{
-    margin: 0;
+    position: fixed; width: 100%;}
+#abrir, #abrir-2{
 	text-decoration: none;
 	font-size:14px;
 	display: inline-block;
 	padding: 5px;
 	width: 130px;
     font-weight: 400;
-	color:rgb(56, 124, 145);
-}
-#abrir:hover{
+	color:rgb(56, 124, 145);}
+#abrir:hover, #abrir-2:hover{
     font-weight: 400;
     text-decoration: underline;
-    color:rgb(56, 124, 145); 
-}
+    color:rgb(56, 124, 145); }
 .modal{
 	display: none;
 	position: fixed;
-	z-index:3000;
+	z-index:2000;
 	overflow: auto;
 	left: 0;
 	top:0;
 	width: 100%;
 	height:100%;
-	background: rgba(0, 0, 0, 0.452);
-}
+	background: rgba(0, 0, 0, 0.452);}
 .contenido-modal{
 	position: relative;
 	background-color: #fefefe;
@@ -271,66 +227,43 @@ button {
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .4);
 	animation-name: modal;
 	animation-duration: .7s;
-    border-radius: 15px;
-}
-@keyframes modal{
-	from{top:-330px; opacity:0;}
-	to{top:0; opacity:1;}
-}
+    border-radius: 15px;}
+        @keyframes modal{
+            from{top:-330px; opacity:0;}
+            to{top:0; opacity:1;}}
 .close{
 	color: #d6d3d3;
     margin-bottom: 10px;
-	font-size:30px;
-}
-.close:hover{
+	font-size:30px;}
+        .close:hover{
 	color: rgb(233, 78, 78);
 	text-decoration: none;
-	cursor: pointer;
-}
-#titulo-referencia {
-    margin-bottom: 25px;
-    font-weight: 700;
-}
+	cursor: pointer;}
 .modal-header {
 	padding: 1px 16px;
 	color: black;
-    margin-bottom: 20px;
-}
-
+    margin-bottom: 20px;}
+    #titulo-referencia {
+        margin-bottom: 25px;
+        font-weight: 700;}
 .modal-body{
-	padding: 10px 20px 20px 20px;
-    text-align: center;
-
-}
-
-#contact-lines {
-    position: absolute;
-    font-weight:500;
-    padding-left: 0;
-    margin-bottom: 25px;
-    color: rgb(56, 124, 145);}
-
-#icono-referencia {
-    width:45px;
-    position: relative;
-    align-items: right;
-} 
-
+	padding: 10px 20px 40px 20px;
+    text-align: center;}
+    #icono-referencia {
+        width:45px;
+        position: relative;
+        align-items: right;} 
+        #contact-lines {
+        position: absolute;
+        font-weight:500;
+        padding-left: 0;
+        margin-bottom: 50px;
+        color: rgb(56, 124, 145);}
 @media screen and (max-width:900px){
-	.contenido-modal{
-		width: 70%;
-	}
-	.textos{
-		padding: 150px;
-	}
-}
-
+	.contenido-modal{width: 70%}
+	.textos{padding: 150px;}}
 @media screen and (max-width:500px){
-	.textos{
-		padding:50px;
-	}
-}
-
+	.textos{padding:50px}}
     /** Edudacion */
 #primerestudio {
         margin-top: 10px;
@@ -350,11 +283,9 @@ button {
         border-width: 0.5px;}
         /** Idiomas */
 #langsection {    
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 30px;}
-
         /** Contacto */
-
 input {
     font-family: 'Montserrat', sans-serif;
     width: 90%; 
@@ -374,10 +305,9 @@ textarea {
         border: 0px; 
         border-radius: 20px;}
 #redes {
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
+    background: black; 
     overflow: hidden;
     text-align: center;
-    margin-top: 10%;
     position: static;
     bottom: 0;
     height: 100px;}
@@ -402,8 +332,8 @@ textarea {
     padding: 10px; 
     width: fit-content;}
 #check { 
-    margin-top: 10px ;
-    margin-left: 20px ;
+    margin-top: 9px ;
+    margin-left: 15px ;
     float: left;
     font-size: 12px;
     width: fit-content;}
@@ -412,7 +342,13 @@ textarea {
     background-color: #292929;
     width: 15px;
     border: 0 solid;
-    margin: 0 0  0 15px;
-}
+    margin: 0 0  0 15px;}
 @media (max-width: 800px) {
     #redes{ margin-left: -10%;}}
+
+#button-siguiente {
+    position: absolute;
+    margin-top: 4%;
+    right: 0;}
+
+    
