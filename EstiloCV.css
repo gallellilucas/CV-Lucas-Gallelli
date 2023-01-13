@@ -8,7 +8,7 @@ body{
    /** Menu - NavBar*/
 ul,nav {
     top: 0;  z-index: 1000;
-    margin: 0;    height: 50px;
+    margin: 0;    height: 45px;
     list-style-type: none;
     display: flex;
     text-align: center;
@@ -97,13 +97,13 @@ button {
     border-radius: 20px;}
     #globodetexto {
         color: rgb(31, 30, 30);
-        background: radial-gradient(325.11% 381.11% at 45.51% 55.88%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(285.84% 1067.53% at -35.74% -46.4%, rgba(64, 133, 170, 0.15) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}    
+        background: linear-gradient(105deg ,#fafafa 24%, #f2f2f2 95%)}    
     #globodetexto-2 {
         color: rgb(255, 255, 255);
         background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
     #globodetexto-3 {
         color: rgb(255, 255, 255);
-        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
+        background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(33, 134, 55, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(16, 29, 66, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(21, 40, 87, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
 #titulo {
     margin-bottom: 50px;
     color:black;}
@@ -195,10 +195,9 @@ footer {
     padding: 0 0 0 0  ;    width: 34px; height: 34px;
     border-radius: 300px;
     color:rgb(255, 255, 255);
-    background-color: rgb(50, 84, 95);}
+    background-color: rgb(56, 124, 145);}
 #abrir:hover, #abrir-2:hover{
-    background-color: rgb(47, 49, 49) ; color: white;
-    transition: 0.7s; }
+    background-color: rgb(0, 0, 0) ; color: white; }
 .flex{
 	height:100%;
 	display: flex;
@@ -331,7 +330,7 @@ textarea {
 #option-section {
     display: flex;
     flex-direction: row;
-    justify-content: left;}
+    justify-content: center;}
 #globodecontacto  {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -340,13 +339,18 @@ textarea {
     height: 200px;
     border-radius: 20px;
     color: white;
-    background-image: linear-gradient(300deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65a79 76%,#ec3d43);}
+    background-image: linear-gradient(300deg ,#55dec5 24%, #d97fff 95%);}
 #QR {
-    width:230px;
+    width:200px;
     margin-top: 40px;  
     align-items: center;}
 #QR-section {
-    margin-top: 70px;}
+    margin-top: 20px;}
+#Addme {
+    width: 180px;
+    display: block;
+    margin-top: 80px;  
+    align-items: center;}
     /*Responsive*/
     @media screen and (max-width: 1100px) {
         #imagenindex {width: 800px; left:-100px;}
@@ -359,6 +363,7 @@ textarea {
         a {width: 45px;}
         .contenido-modal{width: 70%}
         .textos{padding: 150px;}
+        #Addme {display: none;}
         #option-section,nav{ display:block;}
         #globodecontacto {width: 90%;height: 200px;}
         #redes{ height: 130px;}
