@@ -1,10 +1,10 @@
-
 body{
     margin: 0;
     min-height: 200%;
     font-family: 'Montserrat', sans-serif;
-    background-attachment: static;
-    background-image: url="https://64.media.tumblr.com/e9d7d4c5189bf2d4683c17b2a62a8ae2/b3cb9c77907a5abc-eb/https://64.media.tumblr.com/e9d7d4c5189bf2d4683c17b2a62a8ae2/b3cb9c77907a5abc-eb/s2048x3072/b0f3a84730cfe942783b98a0b2a202f11261b76d.pnj/b0f3a84730cfe942783b98a0b2a202f11261b76d.pnj";}
+    background-attachment: fixed;
+    background-size: 2400px;
+    background-image: url("");}
    /** Menu - NavBar*/
 ul,nav {
     top: 0;  z-index: 1000;
@@ -32,8 +32,8 @@ a {
     padding: 15px 15px 0px 15px;
     text-decoration: none;
     font-size: 14px; font-weight: 600;}
-   /** Elementos comunes a  mas de 1 seccion */
-h1,h2,h3,h4,p {
+   /** Elementos comunes a  mas de 1 pagina html */
+h1,h2,h3,h4,h5,p {
         color: black;
         margin: 0px;
         width: fit-content;}
@@ -64,7 +64,7 @@ button {
     background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%) ; 
     border-radius: 8px;
     border: 0;}
-#abutton {
+    #abutton {
     border-radius: 8px;
     border: 1px solid; 
     background-color: transparent; 
@@ -76,14 +76,15 @@ button {
     margin: 10px 0 10px 0;
     width: fit-content;
     height: 30px;
-    text-align: center;}  
-    #abutton:hover {
+    text-align: center;
+    transition: 1s;}  
+        #abutton:hover {
+        border-radius: 8px;
         border: 1px solid;
         border-color: rgb(56, 124, 145);
         background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
-        border-radius: 8px;
         color: #ffffff;
-        font-weight: 400;}
+        font-weight: 500;}
 #section-margin {
     position: relative;
     text-align: left;
@@ -103,13 +104,36 @@ button {
     #globodetexto-3 {
         color: rgb(255, 255, 255);
         background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(42, 183, 73, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(23, 34, 65, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(41, 65, 126, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-    #titulo {
+#titulo {
     margin-bottom: 50px;
     color:black;}
-    #icono {
-        width:55px;
+#icono {
+        width:50px;
         position: relative;
-        margin-bottom: 40px;}     
+        margin-bottom: 40px;}   
+#resaltado {
+    color: rgb(56, 124, 145);
+    text-align: right;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 2px 0 15px 0;
+    width: fit-content;
+    padding: 0; } 
+footer {
+    background: black; 
+    overflow: hidden;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    height: 90px;}
+    #a-redes {
+    color: white;
+    margin-top: 15%;
+    width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;}
     /** Index */
 #imagenindex {
             position: absolute;
@@ -124,15 +148,15 @@ button {
             margin-top: 200px;
             margin-left: 60%;
             width:fit-content;}
-#p-index{
+    #p-index{
             margin-top: 40px;
             text-align: center;
             color: #a3a5a9;
             width: 340px;}
-#button-index{
+    #button-index{
             margin-top: 40px;
             margin-left: 90px;}
-#download {
+    #download {
     padding: 0;
     margin-left: 70px;
     text-align: center;
@@ -159,28 +183,22 @@ button {
 #segundotrabajo {
         margin-top: 40px;
         border-width: 0.5px;}
-#resaltado {
-    color: rgb(56, 124, 145);
-    text-align: right;
-    font-weight: 600;
-    font-size: 16px;
-    margin: 15px 0 15px 0;
-    width: fit-content;
-    padding: 0; }
-
 /* Ventanas modales */
 #abrir, #abrir-2{
-	text-decoration: none;
-	font-size:14px;
-	display: inline-block;
-	padding: 5px;
-	width: 130px;
-    font-weight: 400;
-	color:rgb(56, 124, 145);}
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size:30px;
+    display: inline-block;
+    justify-content: center;
+    padding: 0 0 0 0  ;    width: 34px; height: 34px;
+    border-radius: 300px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(50, 84, 95);}
 #abrir:hover, #abrir-2:hover{
-    font-weight: 400;
-    text-decoration: underline;
-    color:rgb(56, 124, 145); }
+    background-color: rgb(47, 49, 49) ; color: white;
+    transition: 0.7s; }
 .flex{
 	height:100%;
 	display: flex;
@@ -208,7 +226,7 @@ button {
 	background-color: #fefefe;
     padding: 25px 25px 30px 25px;
 	margin: auto;
-	width: 40%;
+	width: 35%;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .4);
 	animation-name: modal;
 	animation-duration: .7s;
@@ -227,6 +245,8 @@ button {
 	padding: 10px 20px 20px 20px;
     text-align: center;}
 .close{
+    position: absolute;
+    right: 15px;
 	color: #d6d3d3;
     margin-bottom: 10px;
 	font-size:30px;}
@@ -246,7 +266,7 @@ button {
         border-bottom: solid; 
         border-color: #e7e6e6;
         border-width: 0.5px;
-        padding-bottom: 50px;}
+        padding-bottom: 20px;}
 #tercerestudio {
         margin-top: 30px;
         padding-bottom: 20px;
@@ -254,6 +274,11 @@ button {
 #langsection {    
     margin-top: 100px;
     margin-bottom: 30px;}
+#Lic {
+    width:100%;
+    margin-top: 10px;  
+    align-items: center;
+    border-radius: 10px;}
         /** Contacto */
 input {
     font-family: 'Montserrat', sans-serif;
@@ -273,20 +298,6 @@ textarea {
         background:#ffffff;
         border: 0px; 
         border-radius: 20px;}
-#redes {
-    background: black; 
-    overflow: hidden;
-    text-align: center;
-    position: static;
-    bottom: 0;
-    height: 100px;}
-#a-redes {
-    color: white;
-    margin-top: 15%;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 600;
-    font-size: 14px;}
 #button-enviar {
     margin-left: 45%;
     margin-right: 45%;
@@ -329,39 +340,28 @@ textarea {
     height: 200px;
     border-radius: 20px;
     color: white;
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%);}
-#a-3{
-margin-top: 90px;
-text-decoration: none;
-text-align: center;
-font-size:40px;
-display: inline-block;
-padding: 1px 0 3px;
-width: 55px;
-border-radius: 300%;
-color:rgb(56, 124, 145);
-background-color: white;}
-#a-3:hover{
-     background-color: #212121; color: white; }
+    background-image: linear-gradient(300deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65a79 76%,#ec3d43);}
 #QR {
-        width:80%;
-        margin-top: 40px;  
-        align-items: center;}
+    width:230px;
+    margin-top: 40px;  
+    align-items: center;}
+#QR-section {
+    margin-top: 70px;}
     /*Responsive*/
-    @media (max-width: 1100px) {
+    @media screen and (max-width: 1100px) {
         #imagenindex {width: 800px; left:-100px;}
         #indexblock-2 {margin-left: 50%; margin-top: 100px}
         #section-margin {margin-left: 10%; margin-right: 10%;}
         #imagen-sobremi {width: 0px}
         #sobremi-titulo {margin-left: 0;margin-bottom: 40px;}}
-    @media (max-width: 840px) {
+    @media screen and (max-width: 840px) {
         ul {display: none;}
         a {width: 45px;}
         .contenido-modal{width: 70%}
         .textos{padding: 150px;}
         #option-section,nav{ display:block;}
         #globodecontacto {width: 90%;height: 200px;}
-        #redes{ margin-left: -10%;}
+        #redes{ height: 130px;}
         #imagenindex {width: 600px;left:0;bottom: 0;}
         #indexblock-2 {display: block center; margin-left: 25%; margin-top: 80px}}
     @media screen and (max-width:580px){

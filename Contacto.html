@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+<!-- NavBar -->
     <ul>
         <li><a href="Index.html">Inicio</a></li>
         <li><a href="SobreMi.html">Sobre mí</a></li>
@@ -26,7 +26,6 @@
         <li><a href="Educacion.html">Educación</a></li>
         <li><a href="Contacto.html">Contacto</a></li>
     </ul>
-
     <nav>
         <li><a href="Index.html"><span class="material-symbols-outlined"> home</span></a></li>
         <li><a href="SobreMi.html"><span class="material-symbols-outlined"><span class="material-symbols-outlined">    account_circle</span></a></li>
@@ -34,19 +33,19 @@
         <li><a href="Educacion.html"><span class="material-symbols-outlined">    import_contacts</span></a></li>
         <li><a href="Contacto.html"><span class="material-symbols-outlined"><span class="material-symbols-outlined">    mail</span></a></li>
     </nav>
-        <!-- Ventana Modal -->
-<div id="ventana-modal-3" class="modal">
+<!-- Ventana Modal -->
+<div id="ventana-modal" class="modal">
 
-    <div class="flex" id="flex-3">
+    <div class="flex" id="flex">
 
         <div class="contenido-modal">
             <div class="modal-header flex">
 
-                <span class="close" id="close-3">&times;</span>
+                <span class="close" id="close">&times;</span>
             </div>
             <div class="modal-body">
 
-                <h3 id="titulo-referencia">Ficha de contacto</h3> 
+                <h3 id="titulo-referencia">Agregame</h3> 
                 <p> lucasegallelli@outlook.com <br> +54 11 57205559 <br> @gallellilucas </p>
                 <img id="QR" src="https://lh3.googleusercontent.com/pw/AL9nZEX7DaLl8MxHG8OvRmertTCFDVc3pblIC6gUnkBh3KBYcFW60OvdQqXkbYGSW92qx-_cZFm1z0WgBYoWKLGg8HNuUFnzZNCRf11QRSZ4NvGDYIllRMheJUYmAGVef4U1dgRgAmZVxJki8dTs9JDSypYi=w533-h553-no?authuser=0" alt="Icono">
 
@@ -55,23 +54,26 @@
     </div>
 </div>
 
-
     <section id="section-margin" class= "animate__animated animate__fadeInDown">
+
         <h2 id="titulo">Contacto</h2>
 
         <section id="option-section">
             <div id="globodecontacto" class= "animate__animated animate__fadeInDown">
-                <h4 id= "p-white"> <strong> Agregame </strong> 
+                <h4 id= "p-white"> <strong> ¡Hablemos! </strong> 
                 </h4>
                             <!-- Boton de ventana -->
-                            <div id="textos-div" class="textos">
-                                <a href="#" id="a-3"> + </a> 
-                            </div>            
-                            <!-- JS--> 
-            <script src="Contact.js"></script>
+                <section id="QR-section">
+                    <div id="textos-div" class="textos">
+                        <a href="#" id="abrir" class="buttonagregar"> 
+                            <span class="material-symbols-outlined">add</span> 
+                        </a> 
+                    </div>   
+                </section>        
             </div>
-        
-         
+
+            <div class= "animate__animated animate__fadeInDown">     
+            </div>
         </section>
 
         <h5>Para más información, deje su mensaje y a la brevedad me estaré comunicando con usted.</h5>
@@ -94,22 +96,20 @@
             <textarea name="mensaje" placeholder="Mensaje" cols="40" rows="5"> </textarea>
             </section>
 
-            <!-- <section><input id="checkbox" type="checkbox" required> <p id="check"> Acepto la política de privacidad. </p>
-            </section> -->
-
             <button id="button-enviar" type="submit" class= "animate__animated animate__fadeInDown"> <a id="abutton-enviar" href="Contacto.html"> <strong>  Enviar </strong> </a> </button>
         
         </div>
     </section>
 
-
-                
-
     <footer id="redes" >
         <li><a id="a-redes" href="https://twitter.com/gallellilucas"><u> Twitter </u> </a></li>
         <li><a id="a-redes" href="https://www.linkedin.com/in/lucasegallelli/"><u> LinkedIn </u> </a></li>
         <li><a id="a-redes" href="https://wa.me/qr/OBXXH46CRA5AH1"><u> WhatsApp </u> </a></li>
-    </footer>
-    
+        <li><a id="a-redes" href="https://www.behance.net/lucasgallelli"><u> Behance </u> </a></li>
+</footer>
+
+<!-- JS--> 
+<script src="LEGCV.js"></script>  
+
 </body>
 </html>
