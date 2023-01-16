@@ -3,8 +3,9 @@ body{
     min-height: 200%;
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    background-size: 2400px;
-    background-color: #fafafa;}
+
+    background-color: #fafafa;
+    }
    /** Menu - NavBar*/
 ul,nav {
     top: 0;  z-index: 1000;
@@ -29,7 +30,7 @@ a {
     display: block; 
     width: 110px;
     color: black;
-    padding: 15px 15px 0px 15px;
+    padding: 15px 15px 15px 15px;
     text-decoration: none;
     font-size: 14px; font-weight: 600;}
    /** Elementos comunes a  mas de 1 pagina html */
@@ -64,17 +65,12 @@ p{
     font-weight: 400;}
 #white {
     color: #ffffff;}
-button {   
-    position: sticky;
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%) ; 
-    border-radius: 8px;
-    border: 0;}
-    #abutton, #abutton-down {
+#abutton, #abutton-down {
     border-radius: 5px;
     border: 1px solid; 
-    background-color: transparent; 
-    color: #b28ed4;
-    border-color: #b28ed4;
+    background-color: #6752ad; 
+    color: white;
+    border-color: #6752ad;
     font-size: 18px; 
     font-weight: 500;
     padding-top: 8px;
@@ -85,18 +81,17 @@ button {
     text-align: center;
     transition: 0.5s;}  
     #abutton-down {
-        background-color: #6753ad;
-        color: white;
+        background-color: transparent;
+        color: #6752ad;
         position: absolute;
         left: 40px;
         top: -3px;
         border-radius: 5px;
         width: 25px;
         border: 1px solid #6752ad;
-        padding-top: 1px;
-    }
+        padding-top: 1px;}
         #abutton:hover, #abutton-down:hover {
-        border-radius: 50px;
+        border-radius: 100px;
         border: 1px solid;
         border-color:#b28ed4;
         background-color:#b28ed4; 
@@ -114,13 +109,17 @@ button {
     border-radius: 20px;}
     #globodetexto {
         color: rgb(31, 30, 30);
-        background: #fff }    
+        background-color: #fff }    
     #globodetexto-2 {
         color: rgb(255, 255, 255);
+        background-size: 400px;
+        background-image: url('https://i.ibb.co/x52pXf1/fondo.png');
         background: linear-gradient(300deg,#32316a 0%,#1e1d88 25%,#6753ad 55%)}
     #globodetexto-3 {
         color: rgb(255, 255, 255);
-        background-color: #6752ad;}
+        background-size: 1400px;
+        background-image: url('https://i.ibb.co/x52pXf1/fondo.png');
+        background: linear-gradient(340deg,#32316a 0%,#38368c 25%,#6753ad 55%)}
 #icono {
         width:45px;
         border-radius:10px ;
@@ -141,6 +140,10 @@ footer {
         margin-right: 10px;
         font-weight: 600;
         font-size: 14px;}
+#button-siguiente {
+    position: absolute;
+    margin-top: 4%;
+    right: 0;}
     /** Index */
 #imagenindex {
     position: absolute;
@@ -158,14 +161,7 @@ footer {
     margin-left: 60%;
     width:fit-content;}
 #buttonindex {
-    display: flex;
-    flex-direction: row;
-}
-#p-index{
-    margin-top: 40px;
-    text-align: center;
-    color: #a3a5a9;
-    width: 340px;}
+    margin-top: 40px;}
     /** Sobre mi */
 #conteiner {
     display: flex;
@@ -176,7 +172,7 @@ footer {
     margin-bottom: 150px;}
 #imagen-sobremi {
     position: absolute;
-    margin-left: 25%;
+    margin-left: 23%;
     margin-top: 50px;
     border-radius: 500px;
     background-color: rgb(255, 255, 255);
@@ -200,7 +196,7 @@ footer {
     font-size:30px;
     display: inline-block;
     justify-content: center;
-    padding: 0 0 0 0  ;    width: 34px; height: 34px;
+    padding: 0 0 0 0  ;    width: 38px; height: 38px;
     border-radius: 300px;
     color:rgb(255, 255, 255);
     background-color:#b28ed4;}
@@ -287,67 +283,11 @@ footer {
     align-items: center;
     border-radius: 10px;}
         /** Contacto */
-input {
-    font-family: 'Montserrat', sans-serif;
-    width: 90%; 
-    height: 30px;
-    top: 342px;
-    padding-left: 15px;  margin: 10px;
-    background:#ffffff;
-    border: 0px; 
-    border-radius: 60px;}
-textarea {
-        font-family: 'Montserrat', sans-serif;
-        width: 87%; 
-        height: 100px;
-        top: 342px;
-        padding: 15px;  margin: 10px;
-        background:#ffffff;
-        border: 0px; 
-        border-radius: 20px;}
-#button-enviar {
-    margin-left: 45%;
-    margin-right: 45%;
-    padding: 2px;
-    background: radial-gradient(1657.5% 33094.44% at 50% 50%, rgba(41, 251, 87, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(683.75% 83958.63% at 104.63% -91.25%, rgba(36, 55, 105, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(61, 101, 203, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(298.75% 65362.36% at 6.35% -251.25%, #3D65CB 0%, rgba(255, 255, 255, 0) 100%); 
-    margin-top: 5%;}
-#abutton-enviar{ 
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;     
-    font-size: 14px; 
-    font-weight: 500;
-    padding: 10px; 
-    border-radius: 30px;
-    width: fit-content;}
-#check { 
-    margin-top: 9px ;
-    margin-left: 15px ;
-    float: left;
-    font-size: 12px;
-    width: fit-content;}
-#checkbox {
-    float: left;
-    background-color: #292929;
-    width: 15px;
-    border: 0 solid;
-    margin: 0 0  0 15px;}
-#button-siguiente {
-    position: absolute;
-    margin-top: 4%;
-    right: 0;}
+
 #option-section {
     display: flex;
     flex-direction: row;
     justify-content: center;}
-#globodecontacto  {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 20px 5% 20px 5%;
-    width: 45%;
-    height: 200px;
-    border-radius: 20px;
-    color: white;
-    background-image: linear-gradient(130deg,#252527 0%,#1e1e25 50%,#0f0f10 55%,#0e121d 60%)}
 #QR {
     width:200px;
     margin-top: 40px;  
@@ -355,10 +295,17 @@ textarea {
 #QR-section {
     margin-top: 20px;}
 #Addme {
-    width: 180px;
+    width: 280px;
+    height: fit-content;
     display: block;
-    margin-top: 80px;  
+    margin-top: 120px;  
     align-items: center;}
+#button-inicio {
+    position: absolute;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    left: 10%; 
+} 
     /*Responsive*/
     @media screen and (max-width: 1100px) {
         #imagenindex {width: 800px; left:-100px;}
@@ -376,10 +323,10 @@ textarea {
         #option-section,nav{ display:block;}
         #globodecontacto {width: 90%;height: 200px;}
         #redes{ height: 130px;}
-        #imagenindex {width: 450px;left:0;bottom: 0;}
-        #indexblock-2 { margin-left: 25%; margin-top: 80px}}
+        #imagenindex {width: 500px;left:0;bottom: 0;}
+        #indexblock-2 { margin-left: 22%; margin-top: 80px}}
     @media screen and (max-width:580px){
         h1{font-size: 50px}
         .textos{padding:50px}
         #imagenindex {width: 350px;left:0;}
-        #indexblock-2 { margin-left: 15%; margin-top: 80px}}
+        #indexblock-2 { margin-left: 17%; margin-top: 80px}}
