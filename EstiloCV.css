@@ -15,7 +15,7 @@ ul,nav {
     justify-content: center;
     overflow: hidden;
     position: sticky;
-    background-color: rgba(255, 255, 255, 0.386);  -webkit-backdrop-filter: blur(1px);
+    background-color: #fafafa57;  -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(8px);}
     nav {
         display: none;}
@@ -34,7 +34,7 @@ a {
     text-decoration: none;
     font-size: 16px; font-weight: 600;}
    /** Elementos comunes a  mas de 1 pagina html */
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h5,h6,p {
     margin: 0px;
     width: fit-content;}
 h1{ 
@@ -47,9 +47,6 @@ h3{
     font-weight: 600;
     font-size: 24px; 
     font-style: normal;}
-h4{ 
-    font-size: 42px; 
-    font-weight: 600;}
 h5 {
     font-size: 20px; 
     font-weight: 700;}
@@ -67,37 +64,33 @@ p{
     color: #ffffff;}
 #abutton, #abutton-down{
     border-radius: 100px;
-    border: 1px solid;  
-    border-color: #8335fd;
+    border: 1px solid #8335fd;  
     color: #8335FD;
     font-size: 18px; 
     font-weight: 500;
-    padding-top: 12px;
-    padding-bottom: 8px;
-    margin: 10px 15px 10px 15px;
+    padding: 12px 20px 8px 20px;
+    margin: 10px 0px 10px 0px;
     text-align: center;
-    width: 170px;
+    width: fit-content;
     height: 24px;
     transition: 0.5s;}  
-    #abutton-down {
-        background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);
-        color: #fff;
-        position: absolute;
-        left: 30px;
-        top: -3px;
-        border-radius: 100px;
-        width: 55px;
-        padding: 1px 10px 4px 10px;}
-            #abutton:hover, #abutton-down:hover {
+#abutton-down {
+    background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top: -3px;
+    border-radius: 100px;
+    width: 55px;
+    padding: 1px 10px 4px 10px;}
+         #abutton:hover, #abutton-down:hover {
             background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);
             border-radius: 100px;
-            margin-top: 5px;
-            border: 1px solid;
-            border-color:#8335fd;
+            margin-top: 7px;
+            border: 1px solid #8335fd;
             color: #ffffff;
             font-weight: 500;
             transition: 0.5s;}
-
 #section-margin {
     position: relative;
     text-align: left;
@@ -114,34 +107,6 @@ p{
     #globodetexto-2 {
         color: rgb(255, 255, 255);
         background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);}
-    #globodetexto-3 {
-        color: rgb(255, 255, 255);
-        background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);}
-#resaltado {
-    width: 250px;
-    margin-top: -80px;
-    position: absolute;
-}
-#resaltado-2 {
-    width: 70px;
-    margin-top: -40px;
-    margin-left: 350px;
-    rotate: 40deg;
-    position: absolute;
-}
-#resaltado-3 {
-    width: 50px;
-    margin-right: 300px;
-    margin-top: 110px;
-    position: absolute;
-}
-#resaltado-4 {
-    width: 80px;
-    margin-left: 300px;
-    margin-top: 140px;
-    rotate: 200deg;
-    position: absolute;
-}
 footer {
     background: #000000; 
     color: white;
@@ -158,15 +123,14 @@ footer {
         margin-right: 10px;
         font-weight: 600;
         font-size: 14px;}
-#button-siguiente {
+
+#button-siguiente, #button-inicio {
     position: absolute;
-    margin-top: 4%;
-    right: 0;}
-#button-inicio {
-    position: absolute;
-    margin-top: 4%;
-    left: 0; 
-}
+    margin-top: 4%;}
+    #button-siguiente {
+        right: 0;}
+    #button-inicio {
+    left: 0; }
 #section-icono {
     width: 50px; height: 37px;
     background: radial-gradient(102.01% 2016.77% at 0% 100%, #762AED 0%, #9252F4 65.63%); 
@@ -175,8 +139,7 @@ footer {
     text-align: center;
     padding-top: 12px;
     position: relative;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
     /** Index */
 #imagenindex {
     position: absolute;
@@ -196,10 +159,6 @@ footer {
 #buttonindex {
     margin-top: 40px;}
     /** Sobre mi */
-#conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between}
 #sobremi-titulo {
     margin-left: 45%;
     margin-bottom: 150px;}
@@ -214,7 +173,7 @@ footer {
 #primertrabajo {
     margin-top: 10px;
     border-bottom: solid; 
-    border-color: #e1e1e1;
+    border-color: #e8e8e8;
     border-width: 0.5px;
     padding-bottom: 20px;}
 #segundotrabajo {
@@ -244,8 +203,6 @@ footer {
     backdrop-filter: blur(1px);}
 .textos{
 	text-align: right;}
-#textos-div {
-    margin: 0;    padding: 0;}
 #ventana-modal {
     position: fixed; width: 100%;}
 .modal{
@@ -284,40 +241,36 @@ footer {
 .close{
     position: absolute;
     right: 15px;
+    top: 10px;
 	color: #d6d3d3;
     margin-bottom: 10px;
 	font-size:30px;}
         .close:hover{
-	color: rgb(233, 78, 78);
+	color: rgb(239, 32, 32);
 	text-decoration: none;
 	cursor: pointer;}
     /** Educacion e Idiomas */
 #primerestudio {
-        margin-top: 20px;
+        padding: 20px 0 20px 0;
         border-bottom: solid; 
-        border-color: #e7e6e6;
-        border-width: 0.5px;
-        padding-bottom: 20px;}
+        border-color: #e8e8e8;
+        border-width: 0.5px;}
 #segundoestudio {
-        margin-top: 40px;
+        padding: 40px 0 30px 0;
         border-bottom: solid; 
-        border-color: #e7e6e6;
-        border-width: 0.5px;
-        padding-bottom: 30px;}
+        border-color: #e8e8e8;
+        border-width: 0.5px;}
 #tercerestudio {
-        margin-top: 40px;
-        padding-bottom: 20px;
+        padding: 40px 0 20px 0;
         border-width: 0.5px;}
 #langsection {    
-    margin-top: 100px;
-    margin-bottom: 30px;}
+    margin: 100px 0 30px 0;}
 #Lic {
     width:100%;
     margin-top: 10px;  
     align-items: center;
     border-radius: 10px;}
-        /** Contacto */
-
+/** Contacto */
 #option-section {
     display: flex;
     flex-direction: row;
@@ -334,8 +287,13 @@ footer {
     display: block;
     margin-top: 120px;  
     align-items: center;}
-
-    /*Responsive*/
+#bye-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;}
+/*Responsive*/
     @media screen and (max-width: 1100px) {
         #imagenindex {width: 800px; left:-100px;}
         #indexblock-2 {margin-left: 50%; margin-top: 100px}
@@ -346,7 +304,6 @@ footer {
         ul {display: none;}
         a {width: 45px;}
         .contenido-modal{width: 70%}
-        .textos{padding: 150px;}
         #Addme {display: none;}
         #conteiner { flex-direction: column;}
         #option-section,nav{ display:block;}
@@ -356,6 +313,39 @@ footer {
         #indexblock-2 { margin-left: 22%; margin-top: 80px}}
     @media screen and (max-width:580px){
         h1{font-size: 50px}
-        .textos{padding:50px}
         #imagenindex {width: 350px;left:0;}
         #indexblock-2 { margin-left: 17%; margin-top: 80px}}
+
+
+.loader {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden {
+    animation: fadeOut; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: -1000;
+
+    
+}
+/* VER ESTO */
+
+@keyframes fadeOut {
+    100% {
+    opacity:0;
+    visibility: hidden;
+}}
+
+.loadermov {
+    width: 100px;
+}
