@@ -27,6 +27,7 @@ li {
     margin-right: 40px;} 
     li a:hover {
         color: #8335fd;}
+
 a {
     display: block;
     width: 110px;
@@ -127,7 +128,7 @@ p{
         background: radial-gradient(102.01% 2016.77% at 0% 100%, #8335FD 0%, #9252F4 100%);}
         #globodetexto-3 {
         color: rgb(255, 255, 255);
-        background: radial-gradient(102.01% 2016.77% at 0% 100%, #100c2d 0%, #0f0742 100%);}
+        background: radial-gradient(102.01% 2016.77% at 0% 100%, #100c2d 0%, #1c125b 100%);}
 footer {
     background: #000000; 
     overflow: hidden;
@@ -171,7 +172,7 @@ footer {
     margin-left: -235px;
     margin-top: -55px;}
 #draws-2 {
-    margin-top: -70px;margin-top: -105px;}
+    margin-top: -70px;margin-top: -95px;}
 .socialnet {
     display: flex;
     flex-direction: row;
@@ -325,9 +326,9 @@ footer {
     .loadermov {width: 60px;}
 .loader.hidden {
     animation-name: fadeOut; 
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    z-index: -5000;}
+    z-index: -5000;}  
 @keyframes fadeOut {
     100% {
     opacity:0;
@@ -335,7 +336,7 @@ footer {
     /*Responsive*/
 @media screen and (max-width: 1100px) {
         li {margin-right: 15px;}
-        #imagenindex {width: 800px; left:-100px;}
+        #imagenindex {width: 650px; left:-100px;}
         #indexblock-2 {margin-left: 40%; margin-top: 300px}
         #section-margin {margin-left: 10%; margin-right: 10%;}
         #imagen-sobremi {width: 0px}
@@ -349,16 +350,15 @@ footer {
         #option-section,nav{ display:block;}
         #globodecontacto {width: 90%;height: 200px;}
         #redes{ height: 130px;}
-        #imagenindex {width: 500px;left:0;bottom: 0;}
-        #indexblock-2 {margin-left: 0%; margin-top: 230px}}
+        #imagenindex {width: 600px;left:0;bottom: 0;}
+        #indexblock-2 {margin-left: 0%; margin-top: 270px}}
 @media screen and (max-width:580px){
         h2 {font-size: 35px;color: #8335FD;}
         h1 {font-size: 50px;}
         li {margin-right: 10px;}
-        .socialnet {
- 
-        }
         #draws, #draws-2, #imagenindex{display: none; }
         #draws {width: 390px;margin-top: -40px;margin-left: -200px;}
         #globodetexto-2 { margin-left: 0; width: 220px;}
         #indexblock-2 {margin-left: 2%;margin-right: 5%;margin-top: 70%;}}
+@media screen and (max-height:700px){
+#imagenindex {display: none;} } 
