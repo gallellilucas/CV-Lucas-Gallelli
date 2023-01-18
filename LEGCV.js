@@ -7,6 +7,7 @@ loader.className += " hidden";
 });
 
 //Funcion de ventanas modales/
+
 let modal = document.getElementById('ventana-modal');
 let modal2 = document.getElementById('ventana-modal-2');
 let flex = document.getElementById('flex');
