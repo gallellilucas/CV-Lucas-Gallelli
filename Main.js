@@ -49,6 +49,3 @@ ver2.addEventListener("click", function(){
     p2.style.display += "block";
     ver2.className += " ocultar";
 });
-
-
-
