@@ -17,7 +17,7 @@ body{
     justify-content: center;
     overflow: hidden;
     position: sticky;
-    background-color: #e1e1e14d;  -webkit-backdrop-filter: blur(1px);
+    background-color: #e1e1e14d;  -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(8px);}
     nav {
         display: none;}
